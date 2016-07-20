@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem #4</title>
+</head>
+<body>
+	<script>
+
+	var num = prompt("Enter any Number?");
+	var numArr = num.toString().split('');
+	
+	function dashes(arr){
+
+		var numString = '';
+    		
+    		console.log(arr);
+    			for(var i = 0; i < arr.length; i++) {
+					if(arr[i] % 2 === 1 && arr[i+1] % 2 === 1) {
+            			numString += arr[i] + '-';            
+        			} else { numString += arr[i];
+        }
+    }
+    console.log(numString);
+}
+dashes(numArr);
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem #5</title>
+</head>
+<body>
+	<script>
+		var min = 0;
+		var max = 101;
+		var won = false;
+
+		while(!won) {
+		
+		var guess = Math.floor((max + min) / 2);
+		
+		var validResponse = false;
+		while(!validResponse) {
+			var response = prompt("Is " + guess + " High or Low?").toUpperCase();
+			if (response == "H" || response == "L" || response == "Y") {
+				validResponse = true;
+			}
+		}
+		if (max == 0 || min == 101) {
+			won = true;
+			prompt("Hey! it's supposed to be between 1 and 100!")
+		}
+		if (response == "H") {
+			max = guess + 1;
+		}
+		else if (response == "L") {
+			min = guess;
+		} else {
+			won = true;
+		}
+		}
+	</script>
+</body>
+</html>

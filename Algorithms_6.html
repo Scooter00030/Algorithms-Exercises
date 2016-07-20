@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem #6</title>
+</head>
+<body>
+	<script>
+		var won = false;
+
+		var validResponse = false;
+		while(!validResponse) {
+			var response = prompt("You are in a room. There is an exit to the north and to the west");
+			if (response == "go north") { 
+				var north = prompt("Behind this door is the dragon of the North, you shall not pass, in order to pass you must go back and to the west room to gather the shield.");
+				validResponse = true;
+			
+			} else if(response == "go west") {
+				var west = prompt("Here lies a shield, this shield will help get you past the Dragon of the North. Go back to starting room.");
+				validResponse = true;	
+			
+			} else if(response == "go east");{
+				var east = prompt("Back to starting room");
+				validResponse = true;
+			
+			} 
+			prompt("Since you now have the shield, you are able to pass the Dragon of the North, you have now won the game! Good Job!!");
+	}
+	</script>
+</body>
+</html>

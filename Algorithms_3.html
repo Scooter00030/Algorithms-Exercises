@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem #3</title>
+</head>
+<body>
+	<script>
+    var a = 1;
+    var b = 2;
+    var c = 0;
+
+    var num = 0;
+
+    while(b < 2000000) {
+    	if(b % 2 == 0){
+    		num = b + num;
+    	}
+    c = a + b;
+    a = b;
+    b = c;
+
+    }
+    console.log(num);
+
+	</script>
+</body>
+</html>
